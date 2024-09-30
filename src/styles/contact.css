@@ -1,0 +1,258 @@
+tmz{
+    color: #ffb404;
+}
+
+#short-message{
+    padding: 10px;
+}
+
+#short-message h3{
+    font-family: poppins;
+
+}
+
+#short-message p{
+    font-family: poppins_regular;
+}
+
+#address, #my-email, #my-phone{
+    position: relative;
+    padding: 10px;
+}
+
+#address i, #my-email i, #my-phone i{
+    position: absolute;
+    font-size: xx-large;
+}
+
+#address h3, #my-email h3, #my-phone h3{
+    font-family: poppins_regular;
+    margin-left: 45px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    opacity: 0.8;
+}
+#address p, #my-email p, #my-phone p{
+    font-family: poppins_regular;
+    margin-top: 0;
+    margin-left: 45px;
+    
+}
+
+#my-email a{
+    text-decoration: none;
+    color: inherit;
+} 
+
+
+/* social-media icons */
+#contact-details{
+    display: flex;
+    margin-left: 20px; 
+}
+
+#contact-details a{
+    color: white;
+}
+
+.social-media-icons{
+    position: relative;
+    margin-right: 25px;
+    font-size: 32px;
+    width: 40px; /* Set width */
+    height: 40px; /* Set height */
+    border-radius: 50%; /* Make it round */
+    background-color: #444444;
+}
+
+.social-media-icons i{
+    position: absolute;
+    left: 4px;
+    top: 4px;
+}
+
+#message-me{
+    margin-left: 15px;
+    margin-top: 30px;
+     
+}
+
+.text-field{
+    padding: 15px;
+    width: 85%;
+    margin-bottom: 20px;
+    font-family: poppins_regular;
+    background-color: #2b2a2a;
+    border: 1px solid #2b2a2a;
+    border-radius: 25px;
+    
+}
+
+.text-field:focus{
+    color: white;
+}
+
+
+#message{
+    height: 100px;
+}
+
+
+/* SEND MESSAGE BUTTON */
+#message-btn a {
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+#message-btn a {
+    text-decoration: none;
+    display: flex;
+    width: 200px; 
+    border: 1px solid #ffb404;
+    border-radius: 36px;
+    padding-left: 1rem;
+
+}
+
+#message-btn a:hover {
+    background-color: #ffb404;
+    transition: all .25s ease ;
+}
+
+#message-btn h3 {
+    color: white;
+    font-size: medium;
+    text-transform: uppercase;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: poppins_regular, monospace;
+    padding: 2px;
+
+}
+
+
+#message-btn i {
+    max-width: fit-content;
+    margin-left: auto;
+    background-color: #ffb404;
+    border-radius: 50%;
+    font-size: 35px;
+    padding: 0.25rem;
+}
+
+
+
+/* Default styles (for all screen sizes) */
+
+/* Greater than 1200px */
+@media (min-width: 1200px) {
+    body {
+        overflow-y: scroll;
+    }
+    #contact-h1{
+        font-family: poppins_xbold, monospace;
+        font-size: 3.5rem;
+        text-transform: uppercase;  
+        margin: 0;
+        text-align: center;
+        padding-top: 3.75rem;
+    }
+    .child{
+        display: inline-block;
+    }
+    #parent-div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .child-num-1{
+        padding-left: 15px;
+    }
+    #message-me{
+        padding-top: 50px;
+        
+    }
+
+    #short-message p{
+        width: 85%;
+    }
+
+
+}
+
+
+/* Between 992px and 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+    body {
+        overflow-y: scroll;
+    }
+    #contact-h1{
+        font-family: poppins_xbold, monospace;
+        font-size: 3.5rem;
+        text-transform: uppercase;  
+        margin: 0;
+        text-align: center;
+        padding-top: 3.75rem;
+    }
+
+    .child{
+        display: inline-block;
+    }
+
+    #parent-div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .child-num-1{
+        padding-left: 15px;
+    }
+    #message-me{
+        padding-top: 50px;
+        
+    }
+
+    #short-message p{
+        width: 85%;
+    }
+
+}
+
+
+/* smaller screens */
+@media(max-width: 991px){
+    body {
+        overflow-y: scroll;
+    }
+
+    #contact-h1{
+        font-family: poppins_xbold, monospace;
+        font-size: 3.5rem;
+        text-transform: uppercase;  
+        margin: 0;
+        text-align: center;
+        padding-top: 3.75rem;
+    }
+
+}
+
+@media(max-width: 450px){
+    body {
+        overflow-y: scroll;
+    }
+
+    #contact-h1{
+        font-family: poppins_xbold, monospace;
+        font-size: xx-large;
+        text-transform: uppercase;  
+        margin: 20px;
+        text-align: center;
+        padding-top: 3.75rem;
+    }
+
+    
+
+
+}
+

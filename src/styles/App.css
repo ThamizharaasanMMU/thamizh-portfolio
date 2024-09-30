@@ -1,0 +1,221 @@
+/* theme = black/#181414, #ffb404, white */
+
+@font-face {
+  font-family: poppins;
+  src: url('../Poppins/Poppins-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: poppins_regular;
+  src: url('../Poppins/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: poppins_xbold;
+  src: url('../Poppins/Poppins-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: poppins_thin;
+  src: url('../Poppins/Poppins-Thin.ttf') format('truetype');
+}
+
+body{
+  color: white;
+  background-color: #181414;
+  /* font-family: poppins_regular, monospace; */
+}
+
+#navbar{
+  /* font-family: poppins_regular, monospace; */
+  margin-top: 23vh;
+  position: fixed;
+  right: 1rem;
+  align-items: center;    
+}
+
+#navbar li {
+  width: 33%;
+  text-align: center;
+  background-color: #2b2a2a;
+  display: block;
+  border-radius: 50%;
+  padding: 0.75rem;
+  margin: 1.2rem;
+}
+
+.active #home-page, 
+.active #about-page,
+.active #contact-page,
+.active #portfolio-page
+{
+  background-color: #ffb404;
+}
+
+
+#navbar li:hover {
+  background-color: #ffb404;
+  border-top-left-radius: 0;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 50%;
+
+}
+
+#navbar li:hover h2 {
+  animation: slideLeft 0.3s ease forwards;
+
+}
+
+#navbar li i {
+  font-size: 24px; /* Adjust the font size of the icon */
+}
+
+#navbar li h2{
+  position: absolute;
+  font-size:medium; 
+  color: white;
+  text-transform: uppercase;
+  right: 3.75em;
+  margin-top: -0.75rem;
+  background-color: #ffb404;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  height: 20px;
+  opacity: 0;
+  
+
+}
+
+
+
+#smallNavbar {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color:#252525;
+  z-index: 999;
+  margin-left: -101vw;
+  transition: margin-left 0.5s ease; /* Transition effect */
+}
+
+.active li{
+  color: #ffb404;
+}
+
+li svg{
+  fill: rgba(243, 238, 238, 1);
+}
+
+.active li svg{
+  fill: #ffb404;
+}
+
+#smallNavbar ul a {
+  font-family: poppins_regular, monospace;
+  font-size: smaller;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+#smallNavbar h2{
+  margin-top: -3px;
+  margin-left: 15px;
+}
+
+
+#smallNavbar ul li  {
+  margin-top: 5px;
+  text-decoration: none;
+  display: block;
+  display: flex;
+}
+
+#smallNavbar ul {
+  margin-top: 100px;
+
+}
+
+#menuIcon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 51px;
+  z-index: 1000;
+}
+
+#menuIcon button {
+  border: none;
+  font-size: 2rem;
+  background-color: #444444;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 20%;
+  padding: 8px 10px 8px 10px;
+  
+}
+
+#backBtn {
+  display: block;
+  display: none;
+}
+
+
+
+@keyframes slideLeft {
+  from {
+      right: 3.5em; /* Adjust the start position */
+      opacity: 0;
+  }
+  to {
+      right: 3.75em; /* End position */
+      opacity: 1;
+  }
+}
+
+
+
+
+/* Default styles (for all screen sizes) */
+
+/* Greater than 1200px */
+@media (min-width: 1200px) {
+  /* Styles specific to screen sizes greater than 1200px */
+  body {
+      overflow: hidden;
+  }
+  #smallNavbar, #menuIcon {
+      display: none;
+  }
+
+}
+
+/* Between 992px and 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Styles specific to screen sizes between 992px and 1199px */
+  body {
+      overflow: hidden;
+  }
+
+  #smallProfile, #smallNavbar, #menuIcon {
+      display: none;
+  }
+
+}
+
+/* Below 992px */
+@media (max-width: 991px) {
+  /* Styles specific to screen sizes below 992px */
+  body {
+      overflow-y: scroll;
+  }
+  #navbar {
+      display: none;
+  }
+}

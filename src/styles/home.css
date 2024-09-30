@@ -1,0 +1,173 @@
+.homePage{
+    color: white;
+
+}
+
+#rect-trapezium {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 26%;
+}
+
+
+#profile {
+    position: absolute;
+    top: 8%;
+    left: 3%;
+    height: 85.5%;
+    width: 34%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5%;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+
+}
+
+#smallProfile {
+    /* position: absolute; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16vh;
+    width: 35vh; /* Adjusted width to be relative to viewport height */
+    height: 35vh; /* Added height to make it a perfect circle */
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+
+#introText p {
+    line-height: 2em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+#introText a {
+    text-decoration: none;
+    display: flex;
+    width: max-content;  
+    border: 1px solid #ffb404;
+    border-radius: 36px;
+    padding-left: 1rem;
+
+}
+
+#introText a:hover {
+    background-color: #ffb404;
+    transition: all .25s ease ;
+}
+
+#introText h3 {
+    color: white;
+    font-size: smaller;
+    text-transform: uppercase;
+    display: block;
+    margin-top: 18px;
+    padding: 2px;
+
+}
+
+#introText i {
+    margin-left: 10px;
+    background-color: #ffb404;
+    border-radius: 50%;
+    height: 21%;
+    padding: 0.25rem;
+
+}
+
+
+/* Default styles (for all screen sizes) */
+
+/* Greater than 1200px */
+@media (min-width: 1200px) {
+    /* Styles specific to screen sizes greater than 1200px */
+    body {
+        overflow: hidden;
+    }
+    #smallProfile {
+        display: none;
+    }
+    #introText{
+        position: absolute;
+        width: 45%;
+        left: 41vw;
+        top: 23vh;
+    
+    }
+    #introText h1 {
+        font-family: poppins, monospace;
+        word-spacing: 5px;
+        font-size: 48px;
+        margin: 0;
+        text-transform: uppercase;
+    
+    }
+
+}
+
+/* Between 992px and 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Styles specific to screen sizes between 992px and 1199px */
+    body {
+        overflow: hidden;
+    }
+
+    #smallProfile{
+        display: none;
+    }
+    #introText{
+        position: absolute;
+        width: 45%;
+        left: 41vw;
+        top: 23vh;
+    
+    }
+    #introText h1 {
+        font-family: poppins, monospace;
+        word-spacing: 5px;
+        font-size: 40px;
+        margin: 0;
+        text-transform: uppercase;
+    
+    }
+
+}
+
+/* Below 992px */
+@media (max-width: 991px) {
+    /* Styles specific to screen sizes below 992px */
+    body {
+        overflow-y: scroll;
+    }
+    .trapezium,#profile {
+        display: none;
+    }
+
+    #introText{
+        position: absolute;
+        width: 60%;
+        left: 22.5vw;
+        top: 55vh;
+        z-index: 1;
+    
+    }
+
+    #introText h1 {
+        font-family: poppins, monospace;
+        word-spacing: 5px;
+        font-size: 20px;
+        text-transform: uppercase;
+        text-align: center;
+    
+    }
+
+    #introText a {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+}
