@@ -1,0 +1,77 @@
+
+
+
+.img-container{
+    border-radius: 20px;
+}
+
+.projects-rectangle{
+    margin-top: 30px;
+}
+
+/* Styles for screens smaller than 575px - MOBILE PHONES */ 
+@media (max-width: 574px) {
+    .project{
+        width: 90%;
+        margin-top: 15px;
+        border-radius: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    
+    .projects-rectangle{
+        width: 100%;  
+    }
+
+
+}
+
+/* Styles for screens between 575px and 992px - TABLETS */
+@media (min-width: 575px) and (max-width: 992px) {
+    .projects-rectangle{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+
+    
+    }
+    
+    
+    .project{
+        flex: 0 0 calc(50% - 10px); 
+        margin: 5px; 
+        box-sizing: border-box;
+        padding: 10px;
+        text-align: center;
+        /* border: 1px solid #ffb404; */
+    
+    
+    }
+
+}
+
+/* Styles for screens larger than 992px - LAPTOP/PC */
+@media (min-width: 993px) {
+    .projects-rectangle{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    
+    
+    .project{
+        flex: 0 0 calc(33.33% - 10px); 
+        margin: 5px; 
+        box-sizing: border-box;
+        padding: 10px;
+        text-align: center;
+        /* border: 1px solid #ffb404; */
+    }
+
+}
