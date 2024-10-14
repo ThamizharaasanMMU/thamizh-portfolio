@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/thamizh-portfolio/static/css/main.01279a81.css",
-    "main.js": "/thamizh-portfolio/static/js/main.0813f1c9.js",
+    "main.css": "/thamizh-portfolio/static/css/main.0d434583.css",
+    "main.js": "/thamizh-portfolio/static/js/main.209a1484.js",
     "static/media/project_5.png": "/thamizh-portfolio/static/media/project_5.ed468896ce8ca9612570.png",
     "static/media/project_1.png": "/thamizh-portfolio/static/media/project_1.17f18f16bce2b455d1fe.png",
     "static/media/project_6.png": "/thamizh-portfolio/static/media/project_6.437b5541c192371c85b1.png",
@@ -13,11 +13,11 @@
     "static/media/Poppins-Bold.ttf": "/thamizh-portfolio/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
     "static/media/Poppins-ExtraBold.ttf": "/thamizh-portfolio/static/media/Poppins-ExtraBold.01849ee091e1762a5dd5.ttf",
     "index.html": "/thamizh-portfolio/index.html",
-    "main.01279a81.css.map": "/thamizh-portfolio/static/css/main.01279a81.css.map",
-    "main.0813f1c9.js.map": "/thamizh-portfolio/static/js/main.0813f1c9.js.map"
+    "main.0d434583.css.map": "/thamizh-portfolio/static/css/main.0d434583.css.map",
+    "main.209a1484.js.map": "/thamizh-portfolio/static/js/main.209a1484.js.map"
   },
   "entrypoints": [
-    "static/css/main.01279a81.css",
-    "static/js/main.0813f1c9.js"
+    "static/css/main.0d434583.css",
+    "static/js/main.209a1484.js"
   ]
 }
