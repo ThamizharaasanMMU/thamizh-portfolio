@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import './styles/contact.css';
 
 
@@ -25,7 +26,7 @@ const Contact = () => {
                 <div id="my-email">
                     <i class='bx bxs-envelope' style={{color: "#ffb404"}}></i>
                     <h3>MAIL ME</h3>
-                    <a href="mailto:thamizharaasan51@gmail.com"><p>thamizharaasan51@gmail.com</p></a>
+                    <NavLink to="mailto:thamizharaasan51@gmail.com" target="_blank"><p>thamizharaasan51@gmail.com</p></NavLink>
             
                 </div>
             
@@ -37,13 +38,13 @@ const Contact = () => {
             
                 <div id="contact-details">
                     <div class="social-media-icons">
-                        <a href="https://www.instagram.com/thamizharaasan_/"><i class='bx bxl-instagram'></i></a>
+                        <NavLink to="https://www.instagram.com/thamizharaasan_/" target="_blank"><i class='bx bxl-instagram'></i></NavLink>
                     </div>
                     <div class="social-media-icons">
-                        <a href="https://www.linkedin.com/in/thamizharaasan/"><i class='bx bxl-linkedin' style={{color: "#ffffff"}}  ></i></a>
+                        <NavLink to="https://www.linkedin.com/in/thamizharaasan/" target="_blank"><i class='bx bxl-linkedin' style={{color: "#ffffff"}}  ></i></NavLink>
                     </div>
                     <div class="social-media-icons">
-                        <a href="https://github.com/ThamizharaasanMMU"><i class='bx bxl-github' style={{color: "#ffffff"}} ></i></a>
+                        <NavLink to="https://github.com/ThamizharaasanMMU" target="_blank"><i class='bx bxl-github' style={{color: "#ffffff"}} ></i></NavLink>
                     </div>
                 </div>
 

@@ -147,8 +147,8 @@
 
     #introText{
         position: absolute;
-        width: 60%;
-        left: 22.5vw;
+        width: 63%;
+        left: 21.5vw;
         top: 55vh;
         z-index: 1;
     
@@ -166,6 +166,10 @@
     #introText a {
         margin-left: auto;
         margin-right: auto;
+    }
+
+    #moreBtn{
+        margin-bottom: 30px;
     }
 
 
