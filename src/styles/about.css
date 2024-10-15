@@ -73,8 +73,14 @@
 
 }
 
-.path-1{animation: animate-path1 1s linear forwards;}
-.path-2{animation: animate-path2 1s linear forwards;}
+.path-1{
+    animation: animate-path1 1s linear forwards;
+    -webkit-animation: animate-path1 1s linear forwards;
+}
+.path-2{
+    animation: animate-path2 1s linear forwards;
+    -webkit-animation: animate-path2 1s linear forwards;
+}
 
 @keyframes animate-path1 {
     100%{
@@ -82,9 +88,25 @@
         stroke: #ffb404;
     }
     
+} 
+@-webkit-keyframes animate-path1 {
+    100%{
+        stroke-dashoffset: 150;
+        stroke: #ffb404;
+    }
+    
 }
 
+
+
 @keyframes animate-path2 {
+    100%{
+        stroke-dashoffset: 50;
+        stroke: #ffb404;
+    }
+}
+
+@-webkit-keyframes animate-path2 {
     100%{
         stroke-dashoffset: 50;
         stroke: #ffb404;
