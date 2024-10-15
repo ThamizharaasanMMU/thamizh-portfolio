@@ -3,6 +3,25 @@ import './styles/contact.css';
 
 
 const Contact = () => {
+
+    const sendMessage = (event) => {
+
+        event.preventDefault();
+        const form = document.getElementById("form-field");
+        const name = form.name.value;
+        const subject = form.subject.value;
+        const message = form.message.value;
+
+        // Create a mailto link
+        const mailtoLink = `mailto:thamizharaasan51@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Message from ${name}:\n\n${message}`)}`;
+
+        // Open the mail client
+        window.open(mailtoLink, '_blank');
+
+        form.reset();
+    
+
+    }
     return (
         <div className="contactPage">
                 <h1 id='contact-h1'>KEEP IN <tmz>TOUCH</tmz></h1>
@@ -51,7 +70,7 @@ const Contact = () => {
             </div>
 
 
-            <div id="message-me">
+            <div id="message-me" >
                 <form id="form-field">
                     <div class="inputs">
                         <input type="text" id="name" name="name" class="text-field" placeholder="YOUR NAME" required maxlength="45" />
@@ -62,12 +81,11 @@ const Contact = () => {
                     <div class="inputs">
                         <input type="text" id="subject" name="subject" class="text-field" placeholder="YOUR SUBJECT" required maxlength="45" />
                     </div>
-                    <div class="inputs">
-                        <textarea id="message" name="message" class="text-field" placeholder="YOUR MESSAGE" required maxlength="200" />
-                        {/* <input id="message" name="message" class="text-field"  type="text" placeholder="YOUR MESSAGE" required maxlength="200" /> */}
+                    <div class="inputs" >
+                        <textarea id="message" name="message" class="text-field" placeholder="YOUR MESSAGE" required maxlength="200" style={{zIndex : "1"}} />
                     </div>
-                    <button style={{background: "none", border: "none", padding: 0, cursor: "pointer", display: "flex", alignItems: "center"}}>
-                        <div id="message-btn"><a href="/"><h3>Send Message</h3><i class='bx bxs-paper-plane' style={{color:"#ffffff"}}  ></i></a></div>
+                    <button onClick={sendMessage} style={{background: "none", border: "none", padding: 0, cursor: "pointer", display: "flex", alignItems: "center"}}>
+                        <div id="message-btn"><a href='/contact'><h3>Send Message</h3><i class='bx bxs-paper-plane' style={{color:"#ffffff"}}  ></i></a></div>
                     </button>
                     
                     
