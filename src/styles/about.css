@@ -75,11 +75,9 @@
 
 .path-1{
     animation: animate-path1 1s linear forwards;
-    -webkit-animation: animate-path1 1s linear forwards;
 }
 .path-2{
-    animation: animate-path2 1s linear forwards;
-    -webkit-animation: animate-path2 1s linear forwards;
+    animation: animate-path2 1s linear forwards;  
 }
 
 @keyframes animate-path1 {
@@ -89,13 +87,7 @@
     }
     
 } 
-@-webkit-keyframes animate-path1 {
-    100%{
-        stroke-dashoffset: 150;
-        stroke: #ffb404;
-    }
-    
-}
+
 
 
 
@@ -106,12 +98,6 @@
     }
 }
 
-@-webkit-keyframes animate-path2 {
-    100%{
-        stroke-dashoffset: 50;
-        stroke: #ffb404;
-    }
-}
 
 
 /* Default styles (for all screen sizes) */
@@ -726,6 +712,15 @@
         
         
     }
+
+    .path-1{
+        stroke-dashoffset: 150;
+        stroke: #ffb404;
+    }
+    .path-2{
+        stroke-dashoffset: 50;
+        stroke: #ffb404; 
+    }
    
 }
 
@@ -910,6 +905,15 @@
         margin-top: 10px;
         margin-left: 15px;
         
+    }
+
+    .path-1{
+        stroke-dashoffset: 150;
+        stroke: #ffb404;
+    }
+    .path-2{
+        stroke-dashoffset: 50;
+        stroke: #ffb404; 
     }
 
 
