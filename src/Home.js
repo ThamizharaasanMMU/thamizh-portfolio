@@ -1,6 +1,9 @@
 import './styles/home.css';
 import { NavLink } from 'react-router-dom';
-import trapezium from './images/Rectangle 1.png'
+import trapezium from './images/Rectangle 1.png';
+import profilePic from './images/IMG_0180.jpg';
+import smallProfilePic  from './images/DSC04944.jpg';
+
 
 const Home = () => {
     return ( 
@@ -11,11 +14,12 @@ const Home = () => {
             </div>
 
             <div id="profile">
-                {/* <!-- <img src="images/TMZimg-removebg.png" alt="Profile Picture" style="height: 100%; width: 100%; object-fit: cover; border-radius: 5%; " > --> */}
+                <img src={profilePic} alt="Thamizharaasan" style={{height: "100%", width: "100%", objectFit: "cover", borderRadius : "5%"}}/>
             </div>
 
 
             <div id="smallProfile">
+                <img src={smallProfilePic} alt="Thamizharaasan" style={{height: "100%", width: "100%", objectFit: "cover", borderRadius : "50%"}} />
 
             </div>
 
